@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador Interactivo
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Presupuesto de viaje Paris vs. Londres para 2 personas
     </title>
 </head>
+
 <body>
+    <script src="./scripts/main.js"></script>
     
+    <h1>Presupuesto de viaje para Londres o Paris para 2 personas</h1>
+    
+    
+    <form action="#">
+        <label for="numero_noches">Numero de noches</label>
+        <input type="text" id="numero_noches">
+
+        <select id="ciudad_destino">
+            <option value="paris">Paris</option>
+            <option value="londres">Londres</option>
+
+
+            <select>
+                <input type="button" onclick="calcular_costo()" value="Enviar">
+                <input type="button" id="result" value="">
 </body>
+<h2>Los valores estan expresados en la moneda local de cada pais </h2> <br>(libras esterlinas para Londres)
+<br>(Euros para Paris)
 </html>
